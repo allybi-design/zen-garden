@@ -15,10 +15,6 @@ $lightBlue: #3d8a9f;
 body {
   font-family: "IBM Plex Mono", monospace;
 }
-// svg {
-//     height: 16px;
-//     width: 16px;
-// }
 
 h1 {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
@@ -155,8 +151,8 @@ footer {
       font-size: 1.5em;
     }
   }
-  a:hovver {
-    text-decoration: underline;
+  a:hover {
+    color: gray;
   }
 }
 

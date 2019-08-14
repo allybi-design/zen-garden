@@ -1,0 +1,247 @@
+$lightGreen: #3c8444b3;
+$darkGreen: #134347;
+$green: #c1d5bc;
+$lightBlue: #3d8a9f;
+
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+// svg {
+//     height: 16px;
+//     width: 16px;
+// }
+
+h1 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-shadow: 6px 6px 6px #000;
+  padding: 1rem;
+}
+
+h2::before {
+     content: "";
+   background-image: url(../img/zen.svg);
+   /* display: block; */
+   background-size: no-repeat;
+   background-size: cover;
+   padding: 1rem 2rem;
+   margin: 0 1rem;
+}
+
+h2 {
+  
+  font-family: "Satisfy", sans-serif;
+  color: white;
+}
+
+p {
+  font-size: 12px;
+  padding: 1rem 0;
+  font-weight: 200;
+}
+
+#zen-intro {
+  header {
+    background-image: url("../img/huntington.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 4.5rem;
+  }
+  .summary,
+  .preamble {
+    width: 80%;
+    margin: 0 auto;
+    a {
+      text-decoration: none;
+      padding: 0.5rem 0.75rem;
+      color: #c0d6c9;
+      text-transform: uppercase;
+      &:hover {
+        background-color: $lightBlue;
+      }
+    }
+  }
+}
+
+#zen-supporting {
+  .explanation {
+    color: black;
+  }
+  .participation,
+  .benefits {
+    background-image: url("../img/bamboo.png");
+    background-color: $lightGreen;
+  }
+  h3,
+  p {
+    color: #000000;
+    width: 80%;
+    margin: 0 auto;
+    abbr,
+    a {
+      color: #243026;
+      text-decoration: none;
+    }
+  }
+  h3 {
+    color: #243026;
+  }
+  .participation,
+  .benefits {
+    p {
+      color: #ffffff;
+      width: 80%;
+      margin: 0 auto;
+      abbr,
+      a {
+        color: #243026;
+        text-decoration: none;
+      }
+    }
+    h3 {
+      color: #243026;
+    }
+  }
+
+  .requirements {
+    h3 {
+      width: 80%;
+      margin: 0 auto;
+      padding-top: 1rem;
+    }
+    p:last-of-type {
+      margin: 0;
+      width: 100%;
+      background-color: $lightGreen;
+      text-align: center;
+      font-size: 12px;
+      font-family: "Roboto";
+      a {
+        font-family: "Satisfy", sans-serif;
+        color: white;
+        font-size: 2rem;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+footer {
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: #526d57;
+  text-align: center;
+  a {
+    text-decoration: none;
+    i {
+      color: white;
+      padding: 0 0.5rem;
+      font-size: 1.5em;
+    }
+  }
+  a:hovver {
+    text-decoration: underline;
+  }
+}
+
+#design-selection {
+  background-color: $green;
+  h3 {
+    display: none;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    li {
+      list-style: none;
+      padding: 1.5rem 0;
+      width: 100%;
+      color: $darkGreen;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      border-bottom: 1px solid gray;
+      a {
+        text-decoration: none;
+        color: $darkGreen;
+      }
+      a:last-of-type {
+        color: gray;
+      }
+    }
+  }
+}
+
+#design-archives {
+  background-color: $green;
+  h3 {
+    display: none;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    li {
+      list-style: none;
+      padding: 1.5rem 0;
+      width: 100%;
+      color: gray;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+
+      a {
+        text-decoration: none;
+        color: $darkGreen;
+      }
+      a:last-of-type {
+        color: gray;
+      }
+    }
+  }
+}
+
+#zen-resources {
+  background-image: url("../img/bamboo.png");
+  background-color: $lightGreen;
+  h3 {
+    display: none;
+  }
+  ul {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    li {
+      list-style: none;
+      padding: 0.75rem 0;
+      width: 50%;
+      color: $darkGreen;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      a {
+        text-decoration: none;
+        color: gray;
+      }
+    }
+  }
+}

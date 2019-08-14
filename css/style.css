@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
+@import url("https://fonts.googleapis.com/css?family=Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+h1 {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-shadow: 6px 6px 6px #000;
+  padding: 1rem;
+}
+
+h2::before {
+  content: "";
+  background-image: url(../img/zen.svg);
+  /* display: block; */
+  background-size: no-repeat;
+  background-size: cover;
+  padding: 1rem 2rem;
+  margin: 0 1rem;
+}
+
+h2 {
+  font-family: "Satisfy", sans-serif;
+  color: white;
+}
+
+p {
+  font-size: 12px;
+  padding: 1rem 0;
+  font-weight: 200;
+}
+
+#zen-intro header {
+  background-image: url("../img/huntington.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  padding: 4.5rem;
+}
+
+#zen-intro .summary,
+#zen-intro .preamble {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#zen-intro .summary a,
+#zen-intro .preamble a {
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  color: #c0d6c9;
+  text-transform: uppercase;
+}
+
+#zen-intro .summary a:hover,
+#zen-intro .preamble a:hover {
+  background-color: #3d8a9f;
+}
+
+#zen-supporting .explanation {
+  color: black;
+}
+
+#zen-supporting .participation,
+#zen-supporting .benefits {
+  background-image: url("../img/bamboo.png");
+  background-color: #3c8444b3;
+}
+
+#zen-supporting h3,
+#zen-supporting p {
+  color: #000000;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#zen-supporting h3 abbr,
+#zen-supporting h3 a,
+#zen-supporting p abbr,
+#zen-supporting p a {
+  color: #243026;
+  text-decoration: none;
+}
+
+#zen-supporting h3 {
+  color: #243026;
+}
+
+#zen-supporting .participation p,
+#zen-supporting .benefits p {
+  color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#zen-supporting .participation p abbr,
+#zen-supporting .participation p a,
+#zen-supporting .benefits p abbr,
+#zen-supporting .benefits p a {
+  color: #243026;
+  text-decoration: none;
+}
+
+#zen-supporting .participation h3,
+#zen-supporting .benefits h3 {
+  color: #243026;
+}
+
+#zen-supporting .requirements h3 {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+#zen-supporting .requirements p:last-of-type {
+  margin: 0;
+  width: 100%;
+  background-color: #3c8444b3;
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto";
+}
+
+#zen-supporting .requirements p:last-of-type a {
+  font-family: "Satisfy", sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+#zen-supporting .requirements p:last-of-type a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: #526d57;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a i {
+  color: white;
+  padding: 0 0.5rem;
+  font-size: 1.5em;
+}
+
+footer a:hovver {
+  text-decoration: underline;
+}
+
+#design-selection {
+  background-color: #c1d5bc;
+}
+
+#design-selection h3 {
+  display: none;
+}
+
+#design-selection ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#design-selection ul li {
+  list-style: none;
+  padding: 1.5rem 0;
+  width: 100%;
+  color: #134347;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  border-bottom: 1px solid gray;
+}
+
+#design-selection ul li a {
+  text-decoration: none;
+  color: #134347;
+}
+
+#design-selection ul li a:last-of-type {
+  color: gray;
+}
+
+#design-archives {
+  background-color: #c1d5bc;
+}
+
+#design-archives h3 {
+  display: none;
+}
+
+#design-archives ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#design-archives ul li {
+  list-style: none;
+  padding: 1.5rem 0;
+  width: 100%;
+  color: gray;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#design-archives ul li a {
+  text-decoration: none;
+  color: #134347;
+}
+
+#design-archives ul li a:last-of-type {
+  color: gray;
+}
+
+#zen-resources {
+  background-image: url("../img/bamboo.png");
+  background-color: #3c8444b3;
+}
+
+#zen-resources h3 {
+  display: none;
+}
+
+#zen-resources ul {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#zen-resources ul li {
+  list-style: none;
+  padding: 0.75rem 0;
+  width: 50%;
+  color: #134347;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#zen-resources ul li a {
+  text-decoration: none;
+  color: gray;
+}
+/*# sourceMappingURL=style.css.map */
